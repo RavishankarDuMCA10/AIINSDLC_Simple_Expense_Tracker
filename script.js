@@ -322,19 +322,22 @@ function initUsernameValidation() {
     const errors = validateUsername(input.value);
     if (input.value.length === 0) {
       input.classList.remove('is-valid', 'is-invalid');
-      feedback.textContent = 'Username is required.';
-      feedback.classList.remove('d-none');
       input.classList.add('is-invalid');
+      feedback.textContent = 'Username is required.';
+      feedback.classList.remove('d-none', 'text-success');
+      feedback.classList.add('text-danger');
     } else if (errors.length === 0) {
       input.classList.add('is-valid');
       input.classList.remove('is-invalid');
-      feedback.classList.add('d-none');
-      feedback.textContent = '';
+      feedback.textContent = `Welcome, ${input.value}! Username accepted.`;
+      feedback.classList.remove('d-none', 'text-danger');
+      feedback.classList.add('text-success');
     } else {
       input.classList.add('is-invalid');
       input.classList.remove('is-valid');
       feedback.textContent = 'Must include: ' + errors.join(', ') + '.';
-      feedback.classList.remove('d-none');
+      feedback.classList.remove('d-none', 'text-success');
+      feedback.classList.add('text-danger');
     }
   });
 
@@ -342,18 +345,21 @@ function initUsernameValidation() {
     const errors = validateUsername(input.value);
     if (input.value.length === 0) {
       input.classList.remove('is-valid', 'is-invalid');
-      feedback.classList.add('d-none');
       feedback.textContent = '';
+      feedback.classList.add('d-none');
+      feedback.classList.remove('text-success', 'text-danger');
     } else if (errors.length === 0) {
       input.classList.add('is-valid');
       input.classList.remove('is-invalid');
-      feedback.classList.add('d-none');
       feedback.textContent = '';
+      feedback.classList.add('d-none');
+      feedback.classList.remove('text-success', 'text-danger');
     } else {
       input.classList.add('is-invalid');
       input.classList.remove('is-valid');
       feedback.textContent = 'Must include: ' + errors.join(', ') + '.';
-      feedback.classList.remove('d-none');
+      feedback.classList.remove('d-none', 'text-success');
+      feedback.classList.add('text-danger');
     }
   });
 }
