@@ -1,0 +1,14 @@
+[agent mode]:
+@workspace /tests
+
+[agent mode]:
+add all of these tests to the #file:script.test.js
+
+[agent mode]:
+fix the issues in the terminal
+
+[ask mode]:
+@workspace /explain
+
+[ask mode]:
+explain what the selected code does

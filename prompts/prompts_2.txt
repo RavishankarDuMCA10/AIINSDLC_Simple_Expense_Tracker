@@ -1,0 +1,5 @@
+[agent mode]:
+Build out the download chart as png functionality in the #file:script.js file
+
+[agent mode]:
+There's an issue when the page first loads, the chart isn't loading any data.

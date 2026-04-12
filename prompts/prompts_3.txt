@@ -1,0 +1,2 @@
+[agent mode]:
+Above the data and chart tabs in #file:index.html, render a username input which must contain at least 1 uppercase letter, 1 number, and 1 special character and must be at least 5 characters long. Underneath this input, render a submit button.

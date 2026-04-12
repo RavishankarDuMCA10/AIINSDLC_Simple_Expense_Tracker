@@ -1,0 +1,5 @@
+[edit mode OR inline chat]:
+Refactor this code so it renders within a form tag.
+
+[agent mode]:
+Implement the submit form for the username form in #file:script.js. Render an appropriate message if the username passes or fails the regex.

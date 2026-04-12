@@ -1,0 +1,15 @@
+[plan mode]:
+This is a static html project called Bucks2Bar. We need a UI library for styling and we need income and expense inputs for months jan - dec. The UI should be split into 2 tabs ("Data" and "Chart"), the chart tab plots a bar chart of the income and expenses from the inputs in the Data tab. We will need a suitable chart library to render this chart.
+
+[plan mode]:
+To asnwer your questions:
+1. We don't need data persistence.
+2. Yes
+3. Bootstrap 5
+
+[plan mode]:
+1. Update automatically
+2. Yes
+
+[agent mode]:
+Start implementation

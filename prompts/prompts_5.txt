@@ -1,0 +1,8 @@
+[plan mode]:
+@workspace /setupTests
+
+[plan mode]:
+jest
+
+[agent mode]:
+Start implementation
