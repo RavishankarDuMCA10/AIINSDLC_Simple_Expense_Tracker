@@ -364,9 +364,15 @@ function initUsernameValidation() {
   });
 }
 
+// ─── Exports (Jest / Node) ────────────────────────────────────────────────────
+
+if (typeof module !== 'undefined') {
+  module.exports = { fmt, validateUsername };
+}
+
 // ─── Bootstrap ────────────────────────────────────────────────────────────────
 
-document.addEventListener('DOMContentLoaded', () => {
+if (typeof document !== 'undefined') document.addEventListener('DOMContentLoaded', () => {
   buildTableRows();
   initTabs();
   initUsernameValidation();
